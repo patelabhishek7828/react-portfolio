@@ -1,5 +1,5 @@
 **Portfolio**
-Live Preview - [Click Here](https://github.com/patelabhishek7828/react-portfolio)
+Live Preview - [Click Here](https://react-portfolio-abhishek.netlify.app/)
 
 <br/>
 <div align="center">

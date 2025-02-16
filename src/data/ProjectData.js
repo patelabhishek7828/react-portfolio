@@ -28,7 +28,7 @@ export const ProjectList = [
       "Check out my React-based web and mobile app projects, showcasing my coding skills and creativity.",
     tech_stack: ["React", "JSX"],
     github_url: "",
-    demo_url: "https://mymindweb.vercel.app/",
+    demo_url: "https://react-portfolio-abhishek.netlify.app/",
   },
 ];
 
