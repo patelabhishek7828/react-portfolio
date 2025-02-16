@@ -19,7 +19,7 @@ function Contact() {
     <ContactWrapper id="contact">
 
       <div className="Container">
-        <div className="SectionTitle">Get In Touch</div>
+        <div className="SectionTitle">Let's Connect</div>
         <ScrollAnimation animateIn="fadeIn" >
           <div className="BigCard">
             <Email>

@@ -26,8 +26,7 @@ const Header = ({ toggle }) => {
         <NavBtn>
           <a
             className="btn PrimaryBtn"
-            href="https://brown-morna-58.tiiny.site"
-            // href="https://linkedin.com/in/pedro-sales-muniz"
+            href="https://drive.google.com/file/d/1QJ2Bh0SfwTS7bJ0MyPlkEF9aucKv1h5o/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
           >
