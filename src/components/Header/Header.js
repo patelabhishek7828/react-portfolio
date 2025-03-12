@@ -26,7 +26,7 @@ const Header = ({ toggle }) => {
         <NavBtn>
           <a
             className="btn PrimaryBtn"
-            href="https://drive.google.com/file/d/1J7dZwzopD5PBndjyfgzTEVNSyQUtwaJs/view?usp=sharing"
+            href="/resume.pdf" download="Abhishek_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
