@@ -1,6 +1,8 @@
 import React from "react";
 import { Nav, Logo, NavLink, Bars, NavMenu, NavBtn } from "./HeaderElements";
 import logo from "../../assets/logo.png";
+import ResumePdf from "../../assets/ResumeAbhishek.pdf";
+
 const Header = ({ toggle }) => {
   return (
     <div className="Container" style={{padding: 0}}>
@@ -26,7 +28,7 @@ const Header = ({ toggle }) => {
         <NavBtn>
           <a
             className="btn PrimaryBtn"
-            href="https://publuu.com/flip-book/830817/1826421" download="Abhishek_Resume.pdf"
+            href={ResumePdf} 
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -18,7 +18,7 @@ body {
 
 main {
   background: #151418;
-  background-image: url('../public/blob-haikei.svg');
+  /* background: #24A3B5 ; */
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -89,6 +89,7 @@ video {
   border: none;
   background: rgb(57, 134, 250);
   color: #f6f6f6;
+  display: inline-block;
 }
 
 .SecondaryBtn{
