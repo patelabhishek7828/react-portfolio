@@ -1,85 +1,78 @@
 import styled from "@emotion/styled";
 
-export const Card = styled.div`
+export const Card = styled.article`
   display: grid;
-  grid-gap: 2rem;
-  margin-bottom: 4rem;
-  grid-template-columns: 1fr;
-  padding-bottom: 2rem;
+  grid-template-columns: minmax(0, 1fr);
+  margin-bottom: 2.5rem;
   overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e8eaf0;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 8px 28px rgba(25, 32, 56, 0.05);
   @media (min-width: 992px) {
-    grid-template-columns: 1fr 1fr;
-    border-bottom: 0;
-    padding-bottom: 0;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
   }
 `;
 
 export const CardLeft = styled.div`
-  justify-self: center;
-  height: 100%;
-  img {
-    object-fit: cover;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f6fa;
+  img { width: 100%; height: 100%; object-fit: cover; }
+  &.brand-panel {
+    padding: 2.5rem;
+    min-height: 240px;
+    background: #fff;
+    border-bottom: 1px solid #edf0f4;
+    img { height: auto; max-height: 190px; object-fit: contain; }
+  }
+  @media (min-width: 992px) {
+    &.brand-panel { border-bottom: 0; border-right: 1px solid #edf0f4; }
   }
 `;
 
 export const CardRight = styled.div`
+  min-width: 0;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  align-items: center;
-
-  h4 {
-    font-size: 1.5rem;
-    font-weight: 400;
+  padding: 2rem;
+  .project-category {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #667085;
+    margin-bottom: 0.6rem;
   }
-
-  p {
-    font-weight: 400;
-    max-width: 95%;
-    margin-top: 10px;
-    margin-bottom: 1rem;
-    color: rgba(0, 0, 0, 0.815);
-    text-align: center;
-
-    @media (min-width: 992px) {
-      text-align: start;
-    }
-  }
-  @media (min-width: 992px) {
-    align-items: flex-start;
-    margin-top: 1rem;
-  }
+  h4 { font-size: 1.45rem; font-weight: 500; color: #182230; line-height: 1.35; }
+  p { font-size: 14px; line-height: 1.8; color: #586174; margin: 0.8rem 0 1.2rem; }
+  @media (max-width: 575px) { padding: 1.5rem; }
 `;
 
 export const BtnGroup = styled.div`
-  height: 70px;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  a { font-size: 13px; margin-right: 0; }
 `;
 
 export const TechCardContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  @media (min-width: 992px) {
-    justify-content: flex-start;
-  }
+  gap: 7px;
 `;
 
-export const TechCard = styled.div`
-  border-radius: 10px;
-  background-color: #f5f5f5;
-  padding: 5px 10px;
-  margin: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 15px;
+export const TechCard = styled.span`
+  border: 1px solid #e6eaf0;
+  border-radius: 6px;
+  background: #f8f9fc;
+  padding: 4px 9px;
+  font-size: 12px;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.815);
-  cursor: default;
-  box-shadow: 0px 2px 5px rgba(160, 170, 180, 0.6);
+  color: #475467;
 `;

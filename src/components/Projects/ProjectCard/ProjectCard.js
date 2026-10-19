@@ -15,18 +15,19 @@ function ProjectCard() {
       {ProjectList.map((list, index) => (
         <ScrollAnimation animateIn="fadeInLeft" key={index}>
           <Card>
-            <CardLeft>
-              <img src={list.img} alt={list.name} />
+            <CardLeft className={list.brand ? `brand-panel ${list.brand}` : undefined}>
+              <img src={list.img} alt={list.title} />
             </CardLeft>
             <CardRight>
+              {list.category && <span className="project-category">{list.category}</span>}
               <h4>{list.title}</h4>
-              <p>{list.description}</p>
+              {list.description && <p>{list.description}</p>}
               <TechCardContainer>
                 {list.tech_stack.map((tech, index) => (
                   <TechCard key={index}>{tech}</TechCard>
                 ))}
               </TechCardContainer>
-              <BtnGroup>
+              {(list.github_url || list.demo_url) && <BtnGroup>
                 {list.github_url.length > 0 && (
                   <a
                     className="btn SecondaryBtn btn-shadow"
@@ -47,7 +48,7 @@ function ProjectCard() {
                     Demo ➜
                   </a>
                 )}
-              </BtnGroup>
+              </BtnGroup>}
             </CardRight>
           </Card>
         </ScrollAnimation>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop stop-color="#17152e"/>
+      <stop offset="1" stop-color="#443278"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#background)"/>
+  <g fill="none" stroke="#a99aee" stroke-width="2" opacity=".4">
+    <circle cx="650" cy="110" r="140"/>
+    <circle cx="650" cy="110" r="190"/>
+    <circle cx="650" cy="110" r="240"/>
+  </g>
+  <rect x="64" y="148" width="64" height="64" rx="18" fill="#b9a4ff"/>
+  <path d="M96 160 L102 174 L116 180 L102 186 L96 200 L90 186 L76 180 L90 174Z" fill="#211b3c"/>
+  <text x="64" y="300" fill="#fff" font-family="Arial, sans-serif" font-size="68" font-weight="700">Curie_Ai</text>
+  <path d="M64 338 H172" stroke="#b9a4ff" stroke-width="5" stroke-linecap="round"/>
+</svg>
